@@ -3,6 +3,7 @@
 .cache
 /dist
 .github
+/storybook-static
 
 # dependencies
 /node_modules
