@@ -1,0 +1,31 @@
+.MuiAutocomplete-endAdornment {
+  @apply top-0 !important;
+}
+
+.MuiAutocomplete-root .MuiOutlinedInput-root .MuiAutocomplete-input {
+  @apply pt-0 !important;
+}
+
+.MuiAutocomplete-root .MuiFormControl-root .MuiInputBase-root {
+  @apply h-auto pl-[14px] pb-[0.4375rem] py-2 !important;
+}
+
+.MuiAutocomplete-root .MuiOutlinedInput-root .MuiAutocomplete-input {
+  @apply pb-[6px] !important;
+}
+
+.MuiAutocomplete-root
+  .MuiFormControl-root
+  .MuiInputBase-root
+  .MuiButtonBase-root.MuiChip-root {
+  @apply text-sm font-medium text-gray-700 h-[25px] px-1 
+        bg-white outline-1 outline-gray-300 outline rounded-md !important;
+}
+
+.MuiAutocomplete-root
+  .MuiFormControl-root
+  .MuiInputBase-root
+  .MuiButtonBase-root.MuiChip-root
+  .MuiSvgIcon-root {
+  @apply text-sm !important;
+}

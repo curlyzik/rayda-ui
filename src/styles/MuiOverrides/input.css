@@ -1,0 +1,28 @@
+.MuiInputBase-root {
+  @apply h-[48px] py-3 rounded-lg border-gray-300 border !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  @apply border-none !important;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root > input::placeholder {
+  @apply opacity-100 text-gray-500 text-base font-normal !important;
+}
+
+.react-tagsinput {
+  @apply rounded-lg border-gray-300 border px-[14px] !important;
+}
+
+.react-tagsinput-input {
+  @apply placeholder:text-gray-500 text-base w-[90px] pt-[3px] mb-1 !important;
+}
+
+.react-tagsinput-tag {
+  @apply border rounded-md border-gray-300 bg-white 
+        text-gray-700 text-sm font-medium pl-[9px] !important;
+}
+
+.react-tagsinput-tag a.react-tagsinput-remove::before {
+  @apply text-sm text-gray-400 px-[3px] !important;
+}

@@ -1,0 +1,7 @@
+.MuiFormLabel-root {
+  @apply text-sm font-medium text-gray-700 mb-1 block !important;
+}
+
+.MuiFormHelperText-root {
+  @apply ml-0 !important;
+}

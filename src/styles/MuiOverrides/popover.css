@@ -1,0 +1,4 @@
+.MuiPaper-root.MuiPopover-paper {
+  @apply rounded-md  bg-white shadow-lg ring-1 ring-black 
+        ring-opacity-5 w-[150px] !important;
+}

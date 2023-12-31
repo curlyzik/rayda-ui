@@ -1,0 +1,7 @@
+.MuiChip-filledError {
+  @apply bg-error-50 !important;
+}
+
+.MuiChip-filledSuccess {
+  @apply bg-success-50 !important;
+}
