@@ -7,7 +7,18 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-onboarding',
     '@storybook/addon-interactions',
+    {
+      name: '@storybook/addon-postcss',
+      options: {
+        postcssLoaderOptions: {
+          implementation: require('postcss'),
+        },
+      },
+    },
   ],
+  typescript: {
+    check: true, // type-check stories during Storybook build
+  },
   framework: {
     name: '@storybook/react-webpack5',
     options: {
