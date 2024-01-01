@@ -21,7 +21,7 @@ module.exports = {
         inject: {
           insertAt: 'top',
         },
-        extract: !!options.writeMeta,
+        extract: false,
       })
     );
     return config;
