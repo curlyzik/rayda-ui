@@ -1,4 +1,3 @@
-//tsdx.config.js
 // https://github.com/jaredpalmer/tsdx/discussions/997
 const postcss = require('rollup-plugin-postcss');
 const autoprefixer = require('autoprefixer');
@@ -22,9 +21,7 @@ module.exports = {
         inject: {
           insertAt: 'top',
         },
-        // inject:true,
-        // only write out CSS for the first bundle (avoids redundant extra files)
-        extract: false,
+        extract: !!options.writeMeta,
       })
     );
     return config;
