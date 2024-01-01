@@ -1,6 +1,5 @@
 .MuiButtonBase-root {
-  @apply rounded-lg h-[48px] normal-case font-semibold text-base 
-        !important;
+  @apply rounded-lg h-[48px] normal-case font-semibold text-base !important;
 }
 
 .Mui-disabled {

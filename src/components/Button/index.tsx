@@ -1,14 +1,9 @@
 import React from 'react';
+import { ButtonProps, Button as MUIButton } from '@mui/material';
+import '../../styles/MuiOverrides/button.css';
 
-export interface ButtonProps {
-  color: string;
-}
-
-const Button: React.FC<React.PropsWithChildren<ButtonProps>> = ({
-  color,
-  children,
-}) => {
-  return <button style={{ color: color }}>{children}</button>;
-};
+const Button: React.FC<React.PropsWithChildren<ButtonProps>> = (props) => (
+  <MUIButton {...props}>{props.children}</MUIButton>
+);
 
 export default Button;
