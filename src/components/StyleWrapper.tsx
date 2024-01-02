@@ -12,8 +12,10 @@ import '../styles/MuiOverrides/list.css';
 import '../styles/MuiOverrides/popover.css';
 import '../styles/MuiOverrides/tabs.css';
 
+import MuiThemeConfig from './MuiThemeConfig';
+
 const StyleWrapper: React.FC<React.PropsWithChildren> = ({ children }) => {
-  return <>{children}</>;
+  return <MuiThemeConfig>{children}</MuiThemeConfig>;
 };
 
 export default StyleWrapper;

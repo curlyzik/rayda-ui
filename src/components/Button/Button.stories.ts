@@ -10,7 +10,7 @@ type Story = StoryObj<typeof Button>;
 
 export const Contained: Story = {
   args: {
-    children: 'Desperado',
+    children: 'Login',
     variant: 'contained',
   },
 };
