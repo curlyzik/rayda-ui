@@ -83,6 +83,7 @@
     "@mui/material": "^5.15.2",
     "@rollup/plugin-alias": "^5.1.0",
     "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addon-themes": "^7.6.6",
     "autoprefixer": "^10.4.16",
     "classnames": "^2.5.1",
     "cssnano": "^6.0.2",

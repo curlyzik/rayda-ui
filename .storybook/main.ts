@@ -15,10 +15,8 @@ const config: StorybookConfig = {
         },
       },
     },
+    '@storybook/addon-themes'
   ],
-  typescript: {
-    check: true, // type-check stories during Storybook build
-  },
   framework: {
     name: '@storybook/react-webpack5',
     options: {
@@ -29,6 +27,23 @@ const config: StorybookConfig = {
   },
   docs: {
     autodocs: 'tag',
+  },
+  // https://storybook.js.org/recipes/@mui/material
+  typescript: {
+    reactDocgen: 'react-docgen-typescript',
+    check: true,
+    reactDocgenTypescriptOptions: {
+      compilerOptions: {
+        allowSyntheticDefaultImports: false,
+        esModuleInterop: false,
+      },
+      shouldExtractLiteralValuesFromEnum: true,
+      shouldRemoveUndefinedFromOptional: true,
+      propFilter: (prop) =>
+        prop.parent
+          ? !/node_modules\/(?!@mui)/.test(prop.parent.fileName)
+          : true,
+    },
   },
 };
 export default config;
