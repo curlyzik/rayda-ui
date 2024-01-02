@@ -5,11 +5,13 @@ import {
 } from '@mui/material';
 import StyleWrapper from '../StyleWrapper';
 
-export interface ButtonProps extends MuiButtonProps {}
+export interface ButtonProps extends MuiButtonProps {
+  children: string;
+}
 
-const Button: React.FC<React.PropsWithChildren<ButtonProps>> = (props) => (
+const Button = ({ children, ...rest }: ButtonProps) => (
   <StyleWrapper>
-    <MUIButton {...props}>{props.children}</MUIButton>
+    <MUIButton {...rest}>{children}</MUIButton>
   </StyleWrapper>
 );
 

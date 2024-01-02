@@ -7,6 +7,7 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-onboarding',
     '@storybook/addon-interactions',
+    '@storybook/addon-themes',
     {
       name: '@storybook/addon-postcss',
       options: {
@@ -15,8 +16,8 @@ const config: StorybookConfig = {
         },
       },
     },
-    '@storybook/addon-themes'
   ],
+
   framework: {
     name: '@storybook/react-webpack5',
     options: {
@@ -25,9 +26,11 @@ const config: StorybookConfig = {
       },
     },
   },
+
   docs: {
     autodocs: 'tag',
   },
+
   // https://storybook.js.org/recipes/@mui/material
   typescript: {
     reactDocgen: 'react-docgen-typescript',
