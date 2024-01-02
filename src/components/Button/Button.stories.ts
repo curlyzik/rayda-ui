@@ -18,7 +18,6 @@ export const Outlined: Story = {
   args: {
     children: 'Desperado',
     variant: 'outlined',
-    disableRipple: true,
   },
 };
 export const Text: Story = {
