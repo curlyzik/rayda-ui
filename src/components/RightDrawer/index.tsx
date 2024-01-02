@@ -5,7 +5,7 @@ import { Circle } from 'rc-progress';
 import { AiOutlineClose } from 'react-icons/ai';
 import classNames from 'classnames';
 
-interface Props {
+export interface RightDrawerProps {
   isDrawerOpen: boolean;
   onClose: () => void;
   width?: number;
@@ -22,8 +22,10 @@ interface Props {
     itemCount: number;
     itemDescription: string;
   };
+  children: React.ReactNode;
 }
-const RightDrawer: React.FC<React.PropsWithChildren<Props>> = ({
+
+const RightDrawer = ({
   children,
   isDrawerOpen,
   onClose,
@@ -34,7 +36,7 @@ const RightDrawer: React.FC<React.PropsWithChildren<Props>> = ({
   drawerTooltipDetails,
   removeBackDrop = false,
   removeZIndex = false,
-}) => {
+}: RightDrawerProps) => {
   return (
     <Drawer
       open={isDrawerOpen}

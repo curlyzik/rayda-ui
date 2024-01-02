@@ -4,9 +4,10 @@ import { Popover as MUIPopover } from '@mui/material';
 import StyleWrapper from '../StyleWrapper';
 
 interface PopoverProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
-const Popover: React.FC<PopoverProps> = ({ children }) => {
+
+const Popover = ({ children }: PopoverProps) => {
   const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
 
   const handleClick = (event: any) => {
