@@ -17,8 +17,8 @@ const preview: Preview = {
 export const decorators = [
   withThemeFromJSXProvider({
     defaultTheme: 'light',
-    Provider: ThemeProvider,
-    GlobalStyles: CssBaseline,
+    // Provider: ThemeProvider,
+    // GlobalStyles: CssBaseline,
   }),
 ];
 
