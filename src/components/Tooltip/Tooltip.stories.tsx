@@ -15,6 +15,7 @@ type Story = StoryObj<typeof Tooltip>;
 export const Default: Story = {
   args: {
     title: <div>Hello, I'm tooltip</div>,
-    children:<div className=''>Hover over me</div>
+    children: <div className=''>Hover over me</div>,
+    // arrow:false,
   },
 };

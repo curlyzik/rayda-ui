@@ -9,11 +9,11 @@ interface TooltipProps extends MuiTooltipProps {
   title: React.ReactNode | string;
 }
 
-const Tooltip = ({ title, children = <HelpIcon /> }: TooltipProps) => {
+const Tooltip = ({ title, arrow, children = <HelpIcon /> }: TooltipProps) => {
   return (
     <MuiTooltip
       title={title}
-      arrow
+      arrow={arrow ?? true}
       classes={{
         tooltip: 'bg-gray-900 p-3',
         arrow: 'text-gray-900',
